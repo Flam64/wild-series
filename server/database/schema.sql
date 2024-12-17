@@ -13,17 +13,17 @@ create table item (
 
 CREATE TABLE program (
     id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
-    title VARCHAR(100),
+    title VARCHAR(100) NOT NULL,
     synopsis TEXT NOT NULL,
-    poster VARCHAR(250),
-    country VARCHAR(100),
-    year INT,
-    category_id INT
+    poster VARCHAR(250) NOT NULL,
+    country VARCHAR(100) NOT NULL,
+    year INT NOT NULL,
+    Foreign Key (category_id) REFERENCES category(id)
 );
 
 CREATE TABLE category (
-id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
-name VARCHAR(100)
+id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT NOT NULL,
+name VARCHAR(100) NOT NULL
 );
 
 insert into user (id, email, password)
