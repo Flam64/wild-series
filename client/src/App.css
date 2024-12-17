@@ -124,12 +124,14 @@ footer {
 }
 
 @keyframes blink {
+
   20%,
   24%,
   55% {
     color: #111;
     text-shadow: none;
   }
+
   0%,
   19%,
   21%,
@@ -138,8 +140,25 @@ footer {
   54%,
   56%,
   100% {
-    text-shadow: 0 0 5px #ff1493ad, 0 0 15px #eee, 0 0 20px #ff1493ad, 0 0 40px
-      #a00ac9, 0 0 60px #ff0000, 0 0 10px #970dc5, 0 0 98px #ff0000;
+    text-shadow: 0 0 5px #ff1493ad, 0 0 15px #eee, 0 0 20px #ff1493ad, 0 0 40px #a00ac9, 0 0 60px #ff0000, 0 0 10px #970dc5, 0 0 98px #ff0000;
     color: #fff;
   }
+}
+
+.series {
+  display: flex;
+  justify-content: space-between;
+}
+
+.seriesCard {
+  width: 600px;
+  padding: 2rem;
+}
+
+img {
+  width: 280px;
+}
+
+h2 {
+  font-size: 14px;
 }
