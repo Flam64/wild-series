@@ -130,6 +130,7 @@ footer {
     color: #111;
     text-shadow: none;
   }
+
   0%,
   19%,
   21%,
@@ -142,4 +143,22 @@ footer {
       #a00ac9, 0 0 60px #ff0000, 0 0 10px #970dc5, 0 0 98px #ff0000;
     color: #fff;
   }
+}
+
+.series {
+  display: flex;
+  justify-content: space-between;
+}
+
+.seriesCard {
+  width: 600px;
+  padding: 2rem;
+}
+
+img {
+  width: 280px;
+}
+
+h2 {
+  font-size: 14px;
 }
