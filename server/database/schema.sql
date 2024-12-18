@@ -18,12 +18,12 @@ CREATE TABLE program (
     poster VARCHAR(250) NOT NULL,
     country VARCHAR(100) NOT NULL,
     year INT NOT NULL,
-    Foreign Key (category_id) REFERENCES category(id)
+    category_id INT NOT NULL
 );
 
 CREATE TABLE category (
-id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT NOT NULL,
-name VARCHAR(100) NOT NULL
+  id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT NOT NULL,
+  name VARCHAR(100) NOT NULL
 );
 
 insert into user (id, email, password)
